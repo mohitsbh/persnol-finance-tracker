@@ -154,7 +154,7 @@ function Dashboard() {
                     />
 
 
-                    {transactions != [] ? <Chart sortedTransactions={sortedTransactions} /> : <NoTransactions />}
+                    {transactions != 0 ? <Chart sortedTransactions={sortedTransactions} /> : <NoTransactions />}
                     {/* Expense Modal */}
                     <AddExpenseModal
                         isExpenseModalVisible={isExpenseModalVisible}
